@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TareaS2.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2a889d" Padding="24" CornerRadius="0">
+            <Label Text="**STEVEN TITUAÑA** Tarea Semana 3" HorizontalTextAlignment="Center" TextColor="White" FontSize="30"/>
+        </Frame>
+
+        <Label x:Name="lblUsuario" HorizontalTextAlignment="End" FontSize="18"/>
+
+
+        <Label Text="PARCIAL 1" HorizontalTextAlignment="Center" TextColor="#2a889d" FontSize="20"/>
+        
+        <Entry x:Name="n_seguimiento_1" Placeholder="Seguimiento" Keyboard="Numeric" TextChanged="n_seguimiento_1_TextChanged"/>
+        <Entry x:Name="n_examen_1" Placeholder="Examen" Keyboard="Numeric" TextChanged="n_examen_1_TextChanged"/>
+        <Entry x:Name="n_parcial_1" Placeholder="Parcial 1" IsReadOnly="TRUE" Keyboard="Numeric"/>
+      
+        <Label Text="PARCIAL 2" HorizontalTextAlignment="Center" TextColor="#2a889d" FontSize="20"/>
+        
+        <Entry x:Name="n_seguimiento_2" Placeholder="Seguimiento" Keyboard="Numeric" TextChanged="n_seguimiento_2_TextChanged"/>
+        <Entry x:Name="n_examen_2" Placeholder="Examen" Keyboard="Numeric" TextChanged="n_examen_2_TextChanged"/>
+        <Entry x:Name="n_parcial_2" Placeholder="Parcial 2" IsReadOnly="TRUE" Keyboard="Numeric"/>
+        <Entry x:Name="n_final" Placeholder="Nota Final" IsReadOnly="TRUE" Keyboard="Numeric"/>
+        <Button x:Name="BtnCalcular" BackgroundColor="#2a889d" Text="Calcular" FontSize="20" TextColor="White" Clicked="BtnCalcular_Clicked"></Button>
+    </StackLayout>
+
+</ContentPage>
